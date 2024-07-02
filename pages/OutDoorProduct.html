@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>soil store</title>
+	<link rel="stylesheet" href="Hanan2.css">
+    <script src="Hanan2.js"></script>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+     <script src="purchase.js" async></script>
+</head>
+<body>
+    <header class="header1">
+        <div class="container2">
+            <h1>Soil Store</h1>
+            <nav class="nav1">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Plants</a>
+                        <ul>
+                            <li><a href="indoor.html">Indoor Plants</a></li>
+                            <li><a href="OutDoorProduct.html">Outdoor Plants</a></li>
+                            <li><a href="aromatic.html">Aromatic Plants</a></li>
+                            <li><a href="takeCare.html">Plant care</a></li>
+                        </ul>
+                    <li><a href="vases.html">Vases</a></li>
+                    <li><a href="giftr2.html">Gifts</a></li>
+                    <li><a href="ShowYourProduct.html">Show Your Products</a></li>
+                    <li><a href="php/AboutUs.php">My profile</a></li>
+                    <li><a href="#" class="cart-icon" ><img src="https://image.pngaaa.com/58/293058-middle.png" width="50" height="25"></a>
+                    </li>
+                    <li class="dropdown2">
+                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/8801/8801434.png" width="30"
+                                height="25"></a>
+                        <ul>
+                            <li><a href="sign.html">Sign Up</a></li>
+                            <li><a href="login.html">Log In</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <nav>
+        <ul class="navbar">
+            <li class="nav-item"><a href="OutDoorProduct.html">outdoor</a></li>
+            <li class="nav-item"><a href="indoor.html">Indoor</a></li>
+            <li class="nav-item"><a href="aromatic.html">Aromatic</a></li>
+           
+        </ul>
+    </nav>
+      
+<table class = HTable>
+    <caption>Outdoor Plants</caption>
+    <tr>
+        <td>
+            <div class = "product-box">
+                <!---image container-->
+                <div class="p-img-container">
+    
+                   <div class="p-img">
+    
+                   <a href="#">
+           
+                       <img src="plant8.jpg" class="plant1" alt="Tomato Seedlings">
+                       <img src="plant8-1.jpg" class="plant2" alt="Tomato Seedlings">
+                   </a>
+               </div>
+                </div>        
+                   <!---category-->
+                   <div class="product-category">
+                       <p>Tomato Seedlings</p>
+                   </div>
+                   <div class="price">
+                       <span class="p-price">95 SR</span>
+                       <a href="#" class="buy-btn" onclick="showAlert(),event.preventDefault();">Buy Now </a>
+                       <a href="#" class="size" onclick="toggleDescription('description'),event.preventDefault();"><b>Size</b></button>
+                        <p id="description" class="size" style="display: none;">Height: 200 cm <br>Jar volume: 35 liters<p></a>	
+    
+    
+           </div>
+        </td>
+        <td>
+            <div class = "product-box">
+                <!---image container-->
+                <div class="p-img-container">
+    
+                   <div class="p-img">
+    
+                   <a href="#">
+           
+                       <img src="plant9.jpg" class="plant1" alt="Washingtonia">
+                       <img src="plant9-1.jpg" class="plant2" alt="Washingtonia">
+                   </a>
+               </div>
+                </div>
+                   <div class="product-category">
+                       <p>Washingtonia</p>
+                   </div>
+                   <div class="price">
+                       <span class="p-price">100 SR</span>
+                       <a href="#" class="buy-btn" onclick="showAlert(),event.preventDefault();">Buy Now </a>
+                       <a href="#" class="size" onclick="toggleDescription('description1'),event.preventDefault();"><b>Size</b></button>
+                       <p id="description1" class="size" style="display: none;">Height: 150 - 175 cm <br>Jar volume: 35 liters<p></a>	
+                   </div>
+    
+           </div>
+        </td>
+        <td>
+            <div class = "product-box">
+                <!---image container-->
+                <div class="p-img-container">
+    
+                   <div class="p-img">
+    
+                   <a href="#">
+           
+                       <img src="plant1.jpg" class="plant1" alt="Orange Tree">
+                       <img src="plant1-1.jpg" class="plant2" alt="Orange Tree">
+                   </a>
+               </div>
+                </div>
+               
+                   <!---category-->
+                   <div class="product-category">
+                       <p>Orange Tree</p>
+                   </div>
+                   <div class="price">
+                       <span class="p-price">150 SR</span>
+                       <a href="#" class="buy-btn" onclick="showAlert(),event.preventDefault();">Buy Now </a>
+                       <a href="#" class="size" onclick="toggleDescription('description2'),event.preventDefault();"><b>Size</b></a>
+                        <p id="description2" class="size" style="display: none;">Height: 200 cm <br>Jar volume: 15 liters<p></a>		
+                   </div>
+                  
+           </div>
+        </td>
+        <td>
+            <div class = "product-box">
+                <!---image container-->
+                <div class="p-img-container">
+    
+                   <div class="p-img">
+    
+                   <a href="#">
+           
+                       <img src="plant2.jpg" class="plant1" alt="Jacaranda">
+                       <img src="plant2-1.jpg" class="plant2" alt="Jacaranda">
+                   </a>
+               </div>
+                </div>
+                   <!---category-->
+                   <div class="product-category">
+                       <p>Jacaranda</p>
+                   </div>
+                   <div class="price">
+                       <span class="p-price">50 SR</span>
+                       <a href="#" class="buy-btn" onclick="showAlert(),event.preventDefault();">Buy Now </a>
+                       <a href="#" class="size" onclick="toggleDescription('description3'),event.preventDefault();"><b>Size</b></a>
+                        <p id="description3" class="size" style="display: none;">Height: 150 cm <br>Jar volume: 15 liters<p></a>		
+                   </div>
+    
+           </div>
+          
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class = "product-box">
+                <!---image container-->
+                <div class="p-img-container">
+    
+                   <div class="p-img">
+    
+                   <a href="#">
+           
+                       <img src="plant3.jpg" class="plant1" alt="Bougainvillea">
+                       <img src="plant3-1.jpg" class="plant2" alt="Bougainvillea">
+                   </a>
+               </div>
+                </div>
+               
+                   <!---category-->
+                   <div class="product-category">
+                       <p>Bougainvilleaa</p>
+                   </div>
+                   <div class="price">
+                       <span class="p-price">250 SR</span>
+                       <a href="#" class="buy-btn" onclick="showAlert(),event.preventDefault();">Buy Now </a>	
+                       <a href="#" class="size" onclick="toggleDescription('description4'),event.preventDefault();"><b>Size</b></a>
+                        <p id="description4" class="size" style="display: none;">Height: 100 cm <br>Jar volume: 15 liters<p></a>	
+                   </div>
+    
+           </div>
+        </td>
+        <td>
+            <div class = "product-box">
+                <!---image container-->
+                <div class="p-img-container">
+    
+                   <div class="p-img">
+    
+                   <a href="#">
+           
+                       <img src="plant4.jpg" class="plant1" alt="Hibiscus">
+                       <img src="plant4-1.jpg" class="plant2" alt="Hibiscus">
+                   </a>
+               </div>
+                </div>                
+                  <!---category-->
+                   <div class="product-category">
+                       <p>Hibiscus</p>
+                   </div>
+                   <div class="price">
+                       <span class="p-price">300 SR</span>
+                       <a href="#" class="buy-btn" onclick="showAlert(),event.preventDefault();">Buy Now </a>	
+                       <a href="#" class="size" onclick="toggleDescription('description5'),event.preventDefault();"><b>Size</b></a>
+                        <p id="description5" class="size" style="display: none;">Height: 50 cm <br>Jar volume: 27 liters<p></a>	
+                   </div>
+    
+           </div>
+        </td>
+        <td>
+            <div class = "product-box">
+                <!---image container-->
+                <div class="p-img-container">
+    
+                   <div class="p-img">
+    
+                   <a href="#">
+           
+                       <img src="plant5.jpg" class="plant1" alt="Epipremnum Aureum">
+                       <img src="plant5-1.jpg" class="plant2" alt="Epipremnum Aureum">
+                   </a>
+               </div>
+                </div>
+                 <!---text-->
+                   <!---category-->
+                   <div class="product-category">
+                       <p>Epipremnum Aureum</p>
+                   </div>
+                   <div class="price">
+                       <span class="p-price">175 SR</span>
+                     
+                       <a href="#" class="buy-btn" onclick="showAlert(),event.preventDefault();">Buy Now </a>	
+                       <a href="#" class="size" onclick="toggleDescription('description6'),event.preventDefault();"><b>Size</b></a>
+                        <p id="description6" class="size" style="display: none;">Height: 200 cm<br> Jar volume: 27 liters<p></a>	
+                   </div>
+                </div>
+    
+        
+        </td>
+        <td>
+            <div class = "product-box">
+                <!---image container-->
+                <div class="p-img-container">
+    
+                   <div class="p-img">
+    
+                   <a href="#">
+           
+                       <img src="plant6-1.jpg" class="plant1" alt="Buxus">
+                       <img src="plant6.jpg" class="plant2" alt="Buxus">
+                   </a>
+               </div>
+                </div>
+                   <!---category-->
+                   <div class="product-category">
+                       <p>Buxus</p>
+                   </div>
+                   <div class="price">
+                       <span class="p-price">250 SR</span>
+                       <a href="#" class="buy-btn" onclick="showAlert(),event.preventDefault();">Buy Now </a>	
+                       <a href="#" class="size" onclick="toggleDescription('description7'),event.preventDefault();"><b>Size</b></a>
+                        <p id="description7" class="size" style="display: none;">Height: 120 cm<br> Jar volume: 50 liters<p></a>	
+                   </div>
+    
+           </div>
+        </td>
+
+    </tr>
+</table>
+
+<!------------------------------------CART--------------------------------------->
+
+<main>
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+        
+            <!-- Cart Items will be added here dynamically -->
+            
+            <div class="product">
+                <div class="cart-box">
+                    <img src="f8.jpg" class="cart-img">
+                    <div class="detail-box">
+                        <p class="cart-product-title">A Flower package</p>
+                        <h6 class="product-price">150 SR</h6>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+                
+               <!--remove cart-->
+                    
+                    <div>
+                        <img src="bxs-trash.svg" class="crat-remove">
+                    </div>
+                </div>
+            </div>
+
+
+          
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+        <button type="button" class="btn-buy">Buy Now</button>
+        <img src="bx-x (1).svg" class="close-cart">
+    </div>
+</body>
+<footer><p>&copy;2023 soil store. All rights reserved.</p></footer>
+
+</html>

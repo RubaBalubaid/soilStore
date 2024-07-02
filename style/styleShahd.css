@@ -1,0 +1,599 @@
+* {
+    box-sizing : border-box;
+    line-height: 1;
+    padding    : 0;
+    margin     : 0;
+}
+
+.box {
+    background-color: white;
+    border-radius   : 15px;
+    overflow        : hidden;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    text-align      : center;
+    box-shadow      : 5px 5px 10px 1px rgb(0, 0, 0, 12%);
+    gap             : 17.5px;
+}
+
+.container {
+    width                : 1180px;
+    padding              : 0px;
+    margin-left          : auto;
+    margin-right         : auto;
+    display              : grid;
+    justify-content      : center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+    gap                  : 35px;
+
+}
+
+
+img {
+
+    max-width: 100%;
+    display  : block;
+}
+
+
+
+.ui-card {
+
+    width           : 250px;
+    /* shado for bolck*/
+    background      : radial-gradient(#051201 50%, #051201 50%);
+    overflow        : hidden;
+    position        : relative;
+    /* margin-bottom: 35px; /* عشان يطلع اللون الاخضر */
+}
+
+
+
+.ui-card img {
+    transform : scale(1.3);
+    transition: all 0.3s ease-out;
+
+
+}
+
+.ui-card:hover img {
+
+    transform: scale(1.1) translateY(-20px);
+    opacity  : 0.3;
+}
+
+
+
+
+
+.description {
+    position  : absolute;
+    bottom    : 0;
+    width     : 100%;
+    padding   : 15px;
+    text-align: center;
+    color     : #fff;
+    font-size : 12px;
+
+}
+
+.description h3 {
+
+    font-weight: 700;
+    font-size  : 32px;
+    margin     : 0 0 20px;
+    transform  : translateY(30px);
+    opacity    : 0;
+    transition : all 0.3s ease-out;
+}
+
+.description p {
+    transform : translateY(30px);
+    opacity   : 0;
+    transition: all 0.2s ease-out;
+    padding-bottom: 20px;
+    font-family: "Trirong", serif;
+    font-size: 16px;
+}
+
+
+
+
+.description a {
+    color          : #fff;
+    background     : #416d3e;
+    display        : inline-block;
+    padding        : 10px 25px;
+    text-decoration: none;
+    border-radius  : 5px;
+    transform      : translateY(30px);
+    opacity        : 0;
+    /* هذا السطر يخلي مربع اد تو كارت يتأخر شوي*/
+    transition     : all 0.3s ease-out 0.4s;
+
+
+}
+
+.description a:hover {
+    background: #152c0d;
+
+}
+
+.ui-card:hover .description h3 {
+    transform: translateY(0px);
+
+
+    opacity: 1;
+
+}
+
+.ui-card:hover .description p {
+
+    opacity  : 1;
+    transform: translateY(0px);
+
+}
+.ui-card:hover .description p h4 {
+
+    opacity  : 1;
+    transform: translateY(0px);
+
+
+}
+
+.ui-card:hover .description a {
+    transform: translateY(0px);
+    opacity: 1;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .heading h1 {
+        font-size: 21px;
+    }
+}
+
+.container {
+    width                : 1180px;
+    padding              : 35px;
+    margin-left          : auto;
+    margin-right         : auto;
+    /* الربيت تاخذ تو فاليو عدد الاعمده وممكن اخليه auto  حسب حجم العمود*/
+    display              : grid;
+    justify-content      : center;
+    /* اقل عمود 250  واوتو حسب الشاشة*/
+    grid-template-columns: repeat(auto-fill, minmax(230px, auto));
+    gap                  : 70px;
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+
+
+/*شغل سارة*/
+
+
+   
+   .container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 45px;
+   }
+   
+   header.header1 {
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+   }
+   
+   header.header1 h1 {
+    font-size: 40px;
+    font-family: "Sofia", sans-serif;
+    text-shadow: 3px 3px 3px #ababab;
+    color: #416d3e;
+    float: left;
+   }
+   
+   nav.nav1 {
+    float: right;
+   }
+   
+   nav.nav1 ul {
+    list-style: none;
+   }
+   
+   nav.nav1 ul li {
+    float: left;
+    margin-left: 20px;
+   }
+   
+   nav.nav1 ul li a {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    font-family: "Trirong", serif;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3sease;
+   }
+   
+   nav.nav1 ul li a:hover {
+    background-color: #416d3e;
+    color: white;
+   }
+   
+   nav.nav1 ul li:nth-child(7) a, nav ul li:nth-child(8) a {
+    background-color: white;
+   }
+   
+   
+    nav.nav1 .dropdown:hover ul {
+     display: block;
+   }
+   
+   nav.nav1 .dropdown ul {
+     display: none;
+     position: absolute;
+     background-color: #fff;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+     padding: 10px;
+   }
+   
+    nav.nav1 .dropdown ul li {
+     display: block;
+     margin: 10px 0;
+   }
+   
+   nav.nav1 .dropdown ul li a {
+     display: block;
+     color: #333;
+     text-decoration: none;
+     padding: 5px 10px 0;
+   }
+   
+    nav.nav1 .dropdown ul li a:hover {
+     display: block;
+    background-color: #416d3e;
+    color: white;
+     text-decoration: none;
+     padding: 5px 10px 0;
+   }
+   
+   
+    nav.nav1 .dropdown2:hover ul {
+     display: block;
+   }
+   
+   nav.nav1 .dropdown2 ul {
+     display: none;
+     position: absolute;
+     background-color: #fff;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+     padding: 10px;
+   }
+   
+    nav.nav1 .dropdown2 ul li {
+     display: block;
+     margin: 10px 0;
+   }
+   
+   nav .nav1.dropdown2 ul li a {
+     display: block;
+     color: #333;
+     text-decoration: none;
+     padding: 5px 10px 0;
+   }
+   
+    nav .dropdown2 ul li a:hover {
+     display: block;
+    background-color: #416d3e;
+    color: white;
+     text-decoration: none;
+     padding: 5px 10px 0;
+   }
+
+
+footer {
+    background-color: #416d3e;
+    color           : white;
+    padding         : 10px;
+    text-align      : center;
+    /*position      : relative;
+    z-index         : -1;*/
+}
+
+footer p {
+    font-size  : 14px;
+    line-height: 1.5;
+}
+
+/*شغل سارة لين هون*/
+
+
+
+ul.navbar {
+    list-style-type: none;
+    margin         : 0;
+    padding        : 0;
+    overflow       : hidden;
+    display        : flex;
+    justify-content: center;
+    font-family: "Sofia", sans-serif;
+}
+
+ul.navbar li {
+    float    : left;
+    display  : block;
+    margin: 0;
+
+     padding-bottom: 100px;
+     padding-top: 80px;
+     padding-right: 40px;
+     padding-left: 40px;
+    font-size: 20px;
+}
+hr{
+   
+    
+    left: 50%;
+    top: 100%;
+    width: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    height: 4px;
+    background-color: #416d3e;
+    
+
+}
+.container3 {
+    max-width: 800px;
+    margin   : 0 auto;
+    padding  : 100px;
+    
+}
+
+header.container3  img{
+    width: 150%;
+    height: auto;
+}
+
+
+
+li.nav-item a {
+    display        : inline-block;
+    color          : #1f421c;
+    text-align     : center;
+    padding        : 14px 16px;
+    text-decoration: none;
+    position       : relative;
+
+}
+
+/* هنا جيكون السكيل زيرو اللي هو الودث مع خلفيه شفافة عشان بعدين في الهوفر يظهر الخط */
+li.nav-item a::after {
+    content         : "";
+    position        : absolute;
+    width           : 100%;
+    height          : 2px;
+    background-color: #416d3e;
+    bottom          : -2px;
+    left            : 0;
+    transform       : scaleX(0);
+
+    /* تخلي الخط سلس اكثر يتمدد*/
+    /*ease-in-out is a timing function that starts slowly, accelerates in the middle, 
+            and then slows down towards the end of the transition. 
+            It provides a smooth and natural-looking effect.*/
+   
+transition      : transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+li.nav-item a:hover::after {
+    transform       : scaleX(1);
+    background-color: #416d3e;
+}
+
+
+.container img {
+    width: 300px; /* Set the desired width */
+    height: 300px; /* Set the desired height */
+  }
+  .container3 img {
+    width: 500px; /* Set the desired width */
+    height: 300px; /* Set the desired height */
+  }
+
+
+  .container4 {
+    position: absolute;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: "Sofia", sans-serif;
+    right: 0; /* Position the element on the right side */
+    min-width: 100px;
+  }
+
+
+
+  #myAside {
+    display: block;
+    background-color: #04ff0000; /* Specify your desired background color */
+    padding: 20px;
+    height: 1180px;
+    width: 400px;
+    box-shadow      : 2 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: "Trirong", serif;
+  }
+
+  #myAside.open {
+    display: block;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  display-area {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none; /* Remove the outline when focused */
+    background-color: transparent; /* Set the background color to transparent */
+    border: none; /* Remove individual border properties */
+    border-top: none; /* Remove individual border properties */
+    border-left: none; /* Remove individual border properties */
+    border-right: none; /* Remove individual border properties */
+    font-family: "Trirong", serif;
+    box-shadow: 2px 2px 5px rgba(5, 66, 28, 0.5); /* Add the shadow effect to bottom border */
+  }
+  
+  
+    
+ 
+  .button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none; 
+    background-color:#416d3e ;
+    font-family: "Sofia", sans-serif;
+ 
+  }
+/* Cart Styles */
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: white;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+  }
+  
+  .cart.active {
+    right: 0;
+  }
+  
+  .cart-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem;
+  }
+  
+  .cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    row-gap: 0.5rem;
+  }
+  
+  .cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+  }
+  
+  .cart-quantity {
+    border: 1px solid #60a05b;
+    outline-color: #60a05b;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .price {
+    font-weight: 500;
+  }
+  
+  .crat-remove {
+    font-size: 24px;
+    color: #60a05b;
+    cursor: pointer;
+  }
+  
+  .total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color--);
+  }
+  
+  .total-title {
+    font-size: 1rem;
+    font-weight: 600;
+    border-top: 1.5px solid black;
+    padding: 5px 0px;
+  }
+  
+  .total-price {
+    margin-left: 0.5rem;
+  }
+  
+  .btn-buy {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: #60a05b;
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .btn-buy:hover {
+    background: #c4dcc3;
+  }
+  
+  .close-cart {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+   
+    cursor: pointer;
+  }
+  
+  .cart-product-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .detail-box {
+    display: grid;
+    row-gap: 0.5rem;
+  }
+  

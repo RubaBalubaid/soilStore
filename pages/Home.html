@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>soil store</title>
+	<!--css-->
+	<link rel="stylesheet" href="homeStyle.css">
+	<!--Google font-->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <script src="homeScript.js" async></script>
+    <script src="purchase.js" async></script>
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>Soil Store</h1>
+			<nav>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li class="dropdown">
+              <a href="#">Plants</a>
+              <ul>
+                  <li><a href="indoor.html">Indoor Plants</a></li>
+                  <li><a href="OutDoorProduct.html">Outdoor Plants</a></li>
+                  <li><a href="aromatic.html">Aromatic Plants</a></li>
+                  <li><a href="takeCare.html">Plant care</a></li>
+              </ul>
+          <li><a href="vases.html">Vases</a></li>
+          <li><a href="giftr2.html">Gifts</a></li>
+          <li><a href="ShowYourProduct.html">Show Your Products</a></li>
+          <li><a href="php/AboutUs.php">My profile</a></li>
+          <li><a href="#" class="cart-icon" ><img src="https://image.pngaaa.com/58/293058-middle.png" width="50" height="25"></a>
+          </li>
+          <li class="dropdown2">
+              <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/8801/8801434.png" width="30"
+                      height="25"></a>
+              <ul>
+                  <li><a href="sign.html">Sign Up</a></li>
+                  <li><a href="login.html">Log In</a></li>
+              </ul>
+          </li>
+      </ul>
+			</nav>
+		</div>
+	</header>
+	
+	
+		<div class="homeText">
+			<h2>Welcome to soil store!</h2>
+			<p>We offer awide selection of plants, vases, and gifts for all your gardening needs.</p>
+			<a href="#plantsDept">Shop Now</a>
+		</div>
+
+<div class="plantsAnchor">
+  <h3 id="plantsDept">Our Plants Departments</h3>
+  <ul>
+    <li>
+      <a href="OutDoorProduct.html">
+        <img src="anchorOutdoor.png" width="250" height="250" data-content="Outdoor Plants">
+        <div class="name">Outdoor Plants</div>
+      </a>
+    </li>
+    <li>
+      <a href="indoor.html">
+        <img src="anchorIndoor.png" width="250" height="250" data-content="Indoor Plants">
+        <div class="name">Indoor Plants</div>
+      </a>
+    </li>
+    <li>
+      <a href="aromatic.html">
+        <img src="anchorAromatic.png" width="250" height="250" data-content="Aromatic Plants">
+        <div class="name">Aromatic Plants</div>
+      </a>
+    </li>
+  </ul>
+</div>
+
+	<footer>
+			<p>&copy;2023 soil store. All rights reserved.</p>
+	</footer>
+
+
+  <!------------------------------------CART--------------------------------------->
+
+<main>
+  <div class="cart">
+      <h2 class="cart-title">Your Cart</h2>
+      <div class="cart-content">
+      
+          <!-- Cart Items will be added here dynamically -->
+          
+          <div class="product">
+              <div class="cart-box">
+                  <img src="f8.jpg" class="cart-img">
+                  <div class="detail-box">
+                      <p class="cart-product-title">A Flower package</p>
+                      <h6 class="product-price">150 SR</h6>
+                      <input type="number" value="1" class="cart-quantity">
+                  </div>
+              
+             <!--remove cart-->
+                  
+                  <div>
+                      <img src="bxs-trash.svg" class="crat-remove">
+                  </div>
+              </div>
+          </div>
+
+
+        
+      </div>
+      <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+      </div>
+      <button type="button" class="btn-buy">Buy Now</button>
+      <img src="bx-x (1).svg" class="close-cart">
+    </main>
+  </div>
+</body>
+</html>

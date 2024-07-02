@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <title>Plant Shop Login</title> 
+    <style>
+
+        body { 
+            background-color: #f2f2f2; 
+            font-family: "Trirong", serif;            
+          background-image: url("WB-Create-Your-New-Year-Plant-Journal-houseplant-leaf-header.png");
+          background-size: cover;
+          } 
+           
+          .login-box { 
+            background-color: #fff; 
+            border-radius: 10px; 
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+            padding: 20px; 
+            margin: 20px auto; 
+            max-width: 400px; 
+          } 
+           
+          h1 { 
+            text-align: center; 
+            font-size: 32px; 
+            margin-bottom: 20px; 
+          } 
+           
+          form { 
+            display: flex; 
+            flex-direction: column; 
+          } 
+           
+          label { 
+            margin-bottom: 10px; 
+          } 
+           
+          input[type="text"], 
+          input[type="password"] { 
+            padding: 10px; 
+            border-radius: 5px; 
+            border: none; 
+            margin-bottom: 20px; 
+          } 
+           
+          button[type="button"] { 
+            background-color: #416d3e; 
+            color: #fff; 
+            padding: 10px; 
+            border-radius: 5px; 
+            border: none; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease; 
+          } 
+           
+          button[type="button"]:hover { 
+            background-color: #006400; 
+          }
+
+    </style>
+
+ 
+
+
+  </head> 
+  <body> 
+    <div class="login-box"> 
+      <h1>Login</h1> 
+       <form method="post" action="php/login.php">
+        <label for="username">Username:</label> 
+        <input type="text" id="username" name="username" placeholder="Enter your username" required> 
+        <label for="password">Password:</label> 
+        <input type="password" id="password" name="password" placeholder="Enter your password" required> 
+        <!-- <a href="home.html"><button type="button" value="Submit">Log In</button> </a> -->
+        <button type="submit" name="login">Log In</button>
+      </form> 
+    </div> 
+  </body> 
+</html>

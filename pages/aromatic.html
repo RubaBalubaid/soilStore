@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>soil store</title>
+    <!--Google font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-double-down-o.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="styleShahd.css">
+    <script>
+
+        function toggleAside() {
+            var aside = document.getElementById("myAside");
+            var icon = document.querySelector(".toggle-icon i");
+
+            if (aside.style.display === "none")
+                aside.style.display = "block";
+
+            else
+                aside.style.display = "none";
+
+
+        }
+        function displayData(event) {
+            event.preventDefault(); // Prevent form submission and page refresh
+
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            var displayArea = document.getElementById("display-area");
+            displayArea.innerHTML = "Name: " + name + "<br><br>Email: " + email + "<br><br>Message: " + message;
+
+            // Clear form fields
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+            var myAside = document.getElementById('myAside');
+            myAside.style.display = 'none';
+        });
+    </script>
+    <script src="purchase.js" async></script>
+
+
+</head>
+
+
+
+<body>
+
+    <header class="header1">
+        <div class="container2">
+            <h1>Soil Store</h1>
+            <nav class="nav1">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Plants</a>
+                        <ul>
+                            <li><a href="indoor.html">Indoor Plants</a></li>
+                            <li><a href="OutDoorProduct.html">Outdoor Plants</a></li>
+                            <li><a href="aromatic.html">Aromatic Plants</a></li>
+                            <li><a href="takeCare.html">Plant care</a></li>
+                        </ul>
+                    <li><a href="vases.html">Vases</a></li>
+                    <li><a href="giftr2.html">Gifts</a></li>
+                    <li><a href="ShowYourProduct.html">Show Your Products</a></li>
+                    <li><a href="php/AboutUs.php">My profile</a></li>
+                    <li><a href="#" class="cart-icon" ><img src="https://image.pngaaa.com/58/293058-middle.png" width="50" height="25"></a>
+                    </li>
+                    <li class="dropdown2">
+                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/8801/8801434.png" width="30"
+                                height="25"></a>
+                        <ul>
+                            <li><a href="sign.html">Sign Up</a></li>
+                            <li><a href="login.html">Log In</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container4">
+        <div class="toggle-icon" onclick="toggleAside()">
+
+            <p> <img src="down-arrow.png"> Tell us about your opinion </p>
+
+
+
+        </div>
+        <aside id="myAside">
+
+            <form onsubmit="displayData(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" rows="4" cols="50"></textarea>
+
+                <button type="submit" class="button">Submit</button>
+
+
+                <div id="display-area"> </div>
+        </aside>
+    </div>
+
+
+
+    <header class="container3">
+        <img src="header4.webp">
+    </header>
+    <hr>
+
+    <nav>
+        <ul class="navbar">
+            <li class="nav-item"><a href="OutDoorProduct.html">outdoor</a></li>
+            <li class="nav-item"><a href="indoor.html">Indoor</a></li>
+            <li class="nav-item"><a href="aromatic.html">Aromatic</a></li>
+
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <div class="box">
+
+            <div class="ui-card">
+                <img src="R.jpg">
+
+
+                <div class="description">
+
+                    <h3>Lavender</h3>
+
+                    <p> Fragrant, calming, purple flowers with therapeutic properties and soothing aroma.</p>
+                    <p>15 SR</p>
+                    <a href="#go to cart"> add to cart</a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="box">
+
+            <div class="ui-card">
+                <img src="Dracaena-fragrans-Lemon.jpg">
+
+
+                <div class="description">
+
+                    <h3> Dracenas fragrance Lemon</h3>
+
+                    <p>Lemon-scented, tropical plant with vibrant green foliage and air-purifying abilities.</p>
+                    <p>15 SR</p>
+                    <a href="#go to cart"> add to cart</a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="box">
+
+            <div class="ui-card">
+                <img src="https://i.pinimg.com/474x/e5/14/a4/e514a47d073ff7423c818b71f886a7dd.jpg">
+
+
+                <div class="description">
+
+                    <h3>Mexican marigold</h3>
+
+                    <p> Bright yellow-orange flowers with strong, aromatic fragrance and ornamental appeal.</p>
+                    <p>15 SR</p>
+                    <a href="#go to cart"> add to cart</a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="box">
+
+            <div class="ui-card">
+                <img src="https://i.pinimg.com/564x/5f/e6/31/5fe6319cc707e68378d885aaf99a9745.jpg">
+
+
+                <div class="description">
+
+                    <h3> Gardenia</h3>
+
+                    <p> White, fragrant flowers with glossy evergreen leaves and elegant appearance.</p>
+                    <p>15 SR</p>
+                    <a href="#go to cart"> add to cart</a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="box">
+
+            <div class="ui-card">
+                <img src="rosmary.jpg">
+
+
+                <div class="description">
+
+                    <h3> Rosemary</h3>
+
+                    <p>Aromatic herb with needle-like leaves, used in cooking and fragrance.</p>
+                    <p>15 SR</p>
+                    <a href="#go to cart"> add to cart</a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="box">
+
+            <div class="ui-card">
+                <img src="https://i.pinimg.com/474x/06/d7/ef/06d7efc5bbba993172083486fc6b2de6.jpg" alt="ياسمين">
+
+
+                <div class="description">
+
+                    <h3>Jasmine</h3>
+
+                    <p> Fragrant white flowers with intoxicating scent and delicate, climbing vines.</p>
+                    <p>15 SR</p>
+                    <a href="#go to cart"> add to cart</a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="box">
+
+            <div class="ui-card">
+                <img src="https://i.pinimg.com/564x/83/8d/43/838d43cdb68abb0b39ebfe7851249e85.jpg" alt="mints">
+
+
+                <div class="description">
+
+                    <h3> mint</h3>
+
+                    <p> Refreshing herb with bright green leaves and cool, invigorating aroma.</p>
+                    <p>15 SR</p>
+                    <a href="#go to cart"> add to cart</a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="box">
+
+            <div class="ui-card">
+                <img src="https://i.pinimg.com/474x/b3/f6/1c/b3f61cd33fa588de2bb67463ef6d6df3.jpg" alt="violet">
+
+
+                <div class="description">
+
+                    <h3> violet</h3>
+
+                    <p> Small, delicate flowers in various shades of purple, often fragrant.</p>
+                    <p>15 SR</p>
+                    <a href="#go to cart"> add to cart</a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="box">
+
+            <div class="ui-card">
+                <img src="https://i.pinimg.com/474x/bf/4e/66/bf4e6652b674dcbacfe954d12b1acc3f.jpg " alt="Chamomile
+                ">
+
+
+                <div class="description">
+
+                    <h3> Chamomile</h3>
+
+                    <p>Daisy-like flowers with apple-like fragrance used for herbal tea.</p>
+                    <p>15 SR</p>
+                    <a href="#go to cart"> add to cart</a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="box">
+
+            <div class="ui-card">
+                <img src="https://i.pinimg.com/474x/e3/b8/41/e3b84139be64ef3d92172357c9b42451.jpg"
+                    alt="Convallaria majalis">
+
+
+                <div class="description">
+
+                    <h3>Convallaria majalis</h3>
+
+
+                    <p>commonly known as Lily of the Valley, is a perennial plant characterized by its fragrant white bell-shaped flowers and lush green foliage.</p>
+                    <p>10 SR</p>
+                    <a href="#go to cart"> add to cart</a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="box">
+
+            <div class="ui-card">
+                <img src="https://i.pinimg.com/474x/4d/08/4f/4d084fa9475c9585297cbc11ec7f304a.jpg" alt=" Marjoram">
+
+
+                <div class="description">
+
+                    <h3>Marjoram</h3>
+
+                    <p>Marjoram is a fragrant herb with small green leaves and a warm, slightly sweet flavor.</p>
+                    <p>5 SR</p>
+                    <a href="#go to cart"> add to cart</a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+        <div class="box">
+
+            <div class="ui-card">
+                <img src="https://i.pinimg.com/474x/26/3d/57/263d57fd5bde6854200ce6f402650de4.jpg">
+
+
+                <div class="description">
+
+                    <h3>Carnation</h3>
+
+                    <p>a colorful flower with ruffled petals and a sweet, spicy fragrance.</p>
+                    <p>25 SR</p>
+                    <a href="#go to cart"> add to cart</a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+    </div>
+    <footer>
+        <p>&copy;2023 soil store. All rights reserved.</p>
+    </footer>
+    <!------------------------------------CART--------------------------------------->
+
+<main>
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+        
+            <!-- Cart Items will be added here dynamically -->
+            
+            <div class="product">
+                <div class="cart-box">
+                    <img src="f8.jpg" class="cart-img">
+                    <div class="detail-box">
+                        <p class="cart-product-title">A Flower package</p>
+                        <h6 class="product-price">150 SR</h6>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+                
+               <!--remove cart-->
+                    
+                    <div>
+                        <img src="bxs-trash.svg" class="crat-remove">
+                    </div>
+                </div>
+            </div>
+
+
+          
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+        <button type="button" class="btn-buy">Buy Now</button>
+        <img src="bx-x (1).svg" class="close-cart">
+    </div>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
