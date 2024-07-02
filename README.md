@@ -5,10 +5,10 @@ including indoor, outdoor, flowering, and aromatic varieties. In addition to thi
 offer the convenience of home delivery for all our product
 
 ## Tools
-Programming Language:  Html, Css, JavaScrpit, and PHP
-IDE: Visual Studio Code
-Database: MySQL using phpMyAdmin
-Server: wamb
+<b>Programming Language:</b>  Html, Css, JavaScrpit, and PHP<br>
+<b>IDE:</b> Visual Studio Code<br>
+<b>Database:</b> MySQL using phpMyAdmin<br>
+<b>Server:</b> wamb<br>
 
 
 ## Authors
@@ -22,7 +22,7 @@ Server: wamb
 
 
 ## Documentation
-Reoprt
-Demo
+[Reoprt](https://github.com/RubaBalubaid/soilStore/blob/main/Report/Internet%20Application%20Project%20Report.pdf)
+[Demo](https://github.com/RubaBalubaid/soilStore/blob/main/Demo/SoilStore%20Demo.mp4)
 
 
