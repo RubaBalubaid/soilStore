@@ -1,6 +1,6 @@
 # SoilStore
 
-project revolves around a plant store that provides customers with a wide selection of plants:<br>
+The project revolves around a plant store that provides customers with a wide selection of plants:<br>
 including indoor, outdoor, flowering, and aromatic varieties. In addition to this Soil Store<br>
 offer the convenience of home delivery for all our product
 
